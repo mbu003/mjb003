@@ -1,0 +1,86 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.1.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.1.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="31823dca-e71b-46d1-8ddc-0c923fee055c" data-root-id="2962"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="2963">
+          {"1d3a7772-ed3b-4c9b-ac73-c5e4d66e2458":{"defs":[],"roots":{"references":[{"attributes":{"js_property_callbacks":{"change:value":[{"id":"2911"}]},"title":"Channel Length (m):","value":"10"},"id":"2910","type":"TextInput"},{"attributes":{"button_type":"warning","icon":null,"js_event_callbacks":{"menu_item_click":[{"id":"2955"}]},"label":"Initial Condition","menu":[["water depth","item_1"],["Discharge","item_2"]]},"id":"2954","type":"Dropdown"},{"attributes":{"code":"console.log('i_c: ' + this.item, this.toString())"},"id":"2955","type":"CustomJS"},{"attributes":{"code":"\n    console.log('friction: value=' + this.value, this.toString())\n"},"id":"2930","type":"CustomJS"},{"attributes":{"children":[{"id":"2958"},{"id":"2959"},{"id":"2960"}]},"id":"2961","type":"Row"},{"attributes":{"children":[{"id":"2943"},{"id":"2944"},{"id":"2949"},{"id":"2945"},{"id":"2947"},{"id":"2950"},{"id":"2952"},{"id":"2954"},{"id":"2956"},{"id":"2957"}]},"id":"2960","type":"Column"},{"attributes":{"code":"\n    console.log('width: value=' + this.value, this.toString())\n"},"id":"2913","type":"CustomJS"},{"attributes":{"children":[{"id":"2908"},{"id":"2961"}]},"id":"2962","type":"Column"},{"attributes":{"text":"&lt;b&gt; BACK WATER CURVE &lt;/b&gt;"},"id":"2908","type":"Div"},{"attributes":{"code":"\n    console.log('slope: value=' + this.value, this.toString())\n"},"id":"2917","type":"CustomJS"},{"attributes":{"js_property_callbacks":{"change:value":[{"id":"2917"}]},"title":"Channel Bed Slope","value":"0.001"},"id":"2916","type":"TextInput"},{"attributes":{"code":"\n    console.log('cd: value=' + this.value, this.toString())\n"},"id":"2932","type":"CustomJS"},{"attributes":{"children":[{"id":"2909"},{"id":"2910"},{"id":"2912"},{"id":"2914"},{"id":"2916"},{"id":"2918"},{"id":"2925"}]},"id":"2958","type":"Column"},{"attributes":{"code":"\n    console.log('fr_no: value=' + this.value, this.toString())\n"},"id":"2938","type":"CustomJS"},{"attributes":{"code":"\n    console.log('dx: value=' + this.value, this.toString())\n"},"id":"2946","type":"CustomJS"},{"attributes":{"end":5,"start":0.1,"step":0.1,"title":"Coefficient of Discharge (Cd)","value":1},"id":"2925","type":"Slider"},{"attributes":{"code":"\n    console.log('hc: value=' + this.value, this.toString())\n"},"id":"2942","type":"CustomJS"},{"attributes":{"button_type":"warning","icon":null,"js_event_callbacks":{"menu_item_click":[{"id":"2951"}]},"label":"Upstream Boundary Condition","menu":[["water depth","item_1"],["Discharge","item_2"]]},"id":"2950","type":"Dropdown"},{"attributes":{"js_property_callbacks":{"change:value":[{"id":"2946"}]},"title":"Space Interval (m):","value":"50"},"id":"2945","type":"TextInput"},{"attributes":{"code":"\n    console.log('hn: value=' + this.value, this.toString())\n"},"id":"2940","type":"CustomJS"},{"attributes":{"js_property_callbacks":{"change:value":[{"id":"2932"}]},"title":"Hydraulic Radius (m):","value":"10"},"id":"2931","type":"TextInput"},{"attributes":{"js_property_callbacks":{"change:value":[{"id":"2913"}]},"title":"Width of Channel (m):","value":"50"},"id":"2912","type":"TextInput"},{"attributes":{"js_property_callbacks":{"change:value":[{"id":"2948"}]},"title":"Time Step (sec):","value":"50"},"id":"2947","type":"TextInput"},{"attributes":{"js_property_callbacks":{"change:value":[{"id":"2938"}]},"title":"Froud Number (m):","value":"10"},"id":"2937","type":"TextInput"},{"attributes":{"text":"&lt;b&gt; OUTPUTS &lt;/b&gt;"},"id":"2956","type":"Div"},{"attributes":{"js_property_callbacks":{"change:value":[{"id":"2930"}]},"title":"Wetted Perimeter (m):","value":"50"},"id":"2929","type":"TextInput"},{"attributes":{"text":"&lt;b&gt; SELECT A SCHEME &lt;/b&gt;"},"id":"2944","type":"Div"},{"attributes":{"button_type":"warning","icon":null,"js_event_callbacks":{"menu_item_click":[{"id":"2953"}]},"label":"Downstream Boundary Condition","menu":[["water depth","item_1"],["Discharge","item_2"]]},"id":"2952","type":"Dropdown"},{"attributes":{"code":"\n    console.log('length: value=' + this.value, this.toString())\n"},"id":"2911","type":"CustomJS"},{"attributes":{"code":"\n    console.log('sp_d: value=' + this.value, this.toString())\n"},"id":"2936","type":"CustomJS"},{"attributes":{"code":"\n    console.log('dt: value=' + this.value, this.toString())\n"},"id":"2948","type":"CustomJS"},{"attributes":{"code":"\n    console.log('v_f: value=' + this.value, this.toString())\n"},"id":"2934","type":"CustomJS"},{"attributes":{"button_type":"warning","icon":null,"js_event_callbacks":{"menu_item_click":[{"id":"2919"}]},"label":"Select a cross section","menu":[["Rectangular","item_1"],["Trapezoidal","item_2"],["Circular","item_3"]]},"id":"2918","type":"Dropdown"},{"attributes":{"js_property_callbacks":{"change:value":[{"id":"2940"}]},"title":"Normal Depth (m):","value":"50"},"id":"2939","type":"TextInput"},{"attributes":{"js_property_callbacks":{"change:value":[{"id":"2942"}]},"title":"Critical Depth (m):","value":"50"},"id":"2941","type":"TextInput"},{"attributes":{"text":"&lt;b&gt; FLOW CHARACTERISTICS &lt;/b&gt;"},"id":"2926","type":"Div"},{"attributes":{"active":0,"labels":["Explicit","Implicit"]},"id":"2949","type":"RadioButtonGroup"},{"attributes":{"code":"\n    console.log('a_f: value=' + this.value, this.toString())\n"},"id":"2928","type":"CustomJS"},{"attributes":{"js_property_callbacks":{"change:value":[{"id":"2915"}]},"title":"Chezy's Coefficient (m^(1/2)/s):","value":"100"},"id":"2914","type":"TextInput"},{"attributes":{"code":"console.log('xsex_dd: ' + this.item, this.toString())"},"id":"2919","type":"CustomJS"},{"attributes":{"js_property_callbacks":{"change:value":[{"id":"2936"}]},"title":"Specific Discharge (m^3/s/m):","value":"50"},"id":"2935","type":"TextInput"},{"attributes":{"text":"&lt;b&gt; CALCULATIONS &lt;/b&gt;"},"id":"2943","type":"Div"},{"attributes":{"code":"console.log('us_bd: ' + this.item, this.toString())"},"id":"2951","type":"CustomJS"},{"attributes":{"js_property_callbacks":{"change:value":[{"id":"2928"}]},"title":"Area of flow (m^2):","value":"50"},"id":"2927","type":"TextInput"},{"attributes":{"js_property_callbacks":{"change:value":[{"id":"2934"}]},"title":"Velocity of flow (m/s):","value":"50"},"id":"2933","type":"TextInput"},{"attributes":{"code":"console.log('ds_bd: ' + this.item, this.toString())"},"id":"2953","type":"CustomJS"},{"attributes":{"active":0,"labels":["Table (Length vs Depth)","Water Surface Profile"]},"id":"2957","type":"RadioButtonGroup"},{"attributes":{"code":"\n    console.log('friction: value=' + this.value, this.toString())\n"},"id":"2915","type":"CustomJS"},{"attributes":{"text":"&lt;b&gt; INPUT PARAMETERS &lt;/b&gt;"},"id":"2909","type":"Div"},{"attributes":{"children":[{"id":"2926"},{"id":"2927"},{"id":"2929"},{"id":"2931"},{"id":"2933"},{"id":"2935"},{"id":"2937"},{"id":"2939"},{"id":"2941"}]},"id":"2959","type":"Column"}],"root_ids":["2962"]},"title":"Bokeh Application","version":"2.4.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            const fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  const docs_json = document.getElementById('2963').textContent;
+                  const render_items = [{"docid":"1d3a7772-ed3b-4c9b-ac73-c5e4d66e2458","root_ids":["2962"],"roots":{"2962":"31823dca-e71b-46d1-8ddc-0c923fee055c"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    let attempts = 0;
+                    const timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
