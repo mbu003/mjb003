@@ -24,7 +24,7 @@ xsec_dd = Dropdown(label="Select a cross section", button_type="warning", menu=x
 
 ################################# FLOW PARAMETERS ##################################################
 flow_p = Div(text="<b> FLOW PARAMETERS </b>")
-
+flow_p = Div(text="<b> FLOW PARAMETERS </b>")
 depth = TextInput(value="5", title="Depth of flow (m):")
 dis = TextInput(value="50", title="Discharge (m^3/s):")
 cd = Slider(start=0.1, end=5, value=1, step=.1, title="Coefficient of Discharge (Cd)")
