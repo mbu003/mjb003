@@ -104,7 +104,6 @@ btn_png = Button(label="Export png",width=200)
 btn_tabular = Button(label="Tabular results",width=200)
 
 
-
 ##### figures################
 graph_BWC= figure(plot_width=650, plot_height=300)
 
